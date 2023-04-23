@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>React-Element</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body id="root">
+
+    <script>
+        const elem = React.createElement("div",null,[React.createElement("h1",null,"Topic Covered"),React
+         .createElement("p",null,"The following is list of all The topics"),React.createElement(
+            "h3",{
+                style:{
+                    color:"blue"
+                }
+            },"Getting Started with web"
+         ),React.createElement("p",null,"Provide a practical introduction to web development"),React.createElement(
+            "h3",{
+                style:{
+                    color:"blue"
+                }
+            },"HTML-Structuring the web"
+         ),React.createElement("p",null,"Provide a practical introduction to web development"),React.createElement(
+            "h3",{
+                style:{
+                    color:"blue",
+                    
+                }
+            },"CSS-Styling the web"
+         ),React.createElement("p",null,"Provide a practical introduction to web development")],
+         )
+        ReactDOM.render(elem,document.getElementById("root"))
+
+    </script>
+    
+</body>
+</html>
